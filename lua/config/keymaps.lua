@@ -6,8 +6,8 @@ vim.keymap.set("n", "<leader>l", "<cmd>wincmd l<cr>") --- rebind move right
 vim.keymap.set("n", "<leader>h", "<cmd>wincmd h<cr>") --- rebind move left
 vim.keymap.set("n", "<leader>L", "<cmd>Lazy<cr>") --- rebind open lazy
 
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- move line
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- move line
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { silent = true }) -- move line
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { silent = true }) -- move line
 
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle) -- undotree
 
