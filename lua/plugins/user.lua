@@ -1,14 +1,15 @@
 return {
-  -- {
-  --   "LazyVim/LazyVim",
-  --   opts = {
-  --     colorscheme = "catppuccin",
-  --   },
-  -- },
+  -- themes
   { "rose-pine/neovim", name = "rose-pine" },
+  { "sainnhe/gruvbox-material", name = "gruvbox-material" },
+  { "rebelot/kanagawa.nvim", name = "kanagawa" },
   {
-    "mbbill/undotree",
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "kanagawa",
+    },
   },
+  -- themes
   {
     "saecki/crates.nvim",
     tag = "stable",
@@ -17,9 +18,8 @@ return {
       require("crates").setup()
     end,
   },
-  {
-    "tpope/vim-fugitive",
-  },
+  { "mbbill/undotree" },
+  { "tpope/vim-fugitive" },
   -- { "codota/tabnine-nvim", build = "./dl_binaries.sh" },
   -- setup = {
   --   disable_auto_comment = true,
